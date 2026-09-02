@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luxurious & Creative LAC</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffb3de;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* =========================
+   SUBTLE BACKGROUND
+========================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 12% 18%,
+            rgba(255,255,255,0.10) 0px,
+            rgba(255,255,255,0.10) 1px,
+            transparent 2px
+        ),
+        radial-gradient(
+            circle at 85% 78%,
+            rgba(255,255,255,0.08) 0px,
+            rgba(255,255,255,0.08) 1px,
+            transparent 2px
+        ),
+        linear-gradient(
+            135deg,
+            transparent 0%,
+            transparent 48%,
+            rgba(255,255,255,0.035) 49%,
+            transparent 50%,
+            transparent 100%
+        );
+
+    background-size:
+        280px 280px,
+        340px 340px,
+        100% 100%;
+
+    pointer-events: none;
+    z-index: -2;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    width: 100%;
+    max-width: 480px;
+
+    margin: 0 auto;
+
+    padding: 25px 20px 35px;
+
+    text-align: center;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+
+    max-width: 90vw;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+/* =========================
+   STORE NAME
+========================= */
+
+.store-name {
+    font-size: 22px;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    color: #ffffff;
+
+    margin-bottom: 7px;
+
+    text-transform: uppercase;
+}
+
+/* =========================
+   ADDRESS
+========================= */
+
+.address {
+    font-size: 14px;
+
+    color: rgba(255,255,255,0.90);
+
+    font-weight: 400;
+
+    margin-bottom: 23px;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+    width: 55px;
+    height: 1px;
+
+    background: #ffffff;
+
+    margin: 0 auto 24px;
+
+    opacity: 0.75;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.btn {
+    width: 100%;
+
+    min-height: 59px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 15px 20px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.2px;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.75);
+
+    border-radius: 13px;
+
+    box-shadow:
+        0 5px 16px rgba(90,40,35,0.10);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+
+    background: rgba(255,255,255,0.15);
+
+    box-shadow:
+        0 8px 20px rgba(90,40,35,0.16);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* =========================
+   ICONS
+========================= */
+
+.icon {
+    width: 23px;
+    height: 23px;
+
+    flex-shrink: 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer-line {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+.footer-line::before,
+.footer-line::after {
+    content: "";
+
+    width: 55px;
+    height: 1px;
+
+    background: #ffffff;
+
+    opacity: 0.55;
+}
+
+.footer-symbol {
+    margin: 0 12px;
+
+    font-size: 14px;
+
+    color: #ffffff;
+}
+
+.footer {
+    margin-top: 15px;
+
+    font-size: 11px;
+
+    color: rgba(255,255,255,0.70);
+
+    letter-spacing: 1.5px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 380px) {
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .logo {
+        width: 275px;
+        height: 275px;
+    }
+
+    .store-name {
+        font-size: 20px;
+    }
+
+    .btn {
+        min-height: 55px;
+        font-size: 14px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- =====================
+         LOGO
+    ====================== -->
+
+    <div class="logo-wrapper">
+
+        <img
+            src="lac-logo.jpeg"
+            class="logo"
+            alt="Luxurious & Creative LAC"
+        >
+
+    </div>
+
+
+    <!-- =====================
+         NAME
+    ====================== -->
+
+    <div class="store-name">
+        LUXURIOUS & CREATIVE LAC
+    </div>
+
+
+    <!-- =====================
+         ADDRESS
+    ====================== -->
+
+    <div class="address">
+        Κώστα Βάρναλη 18, Περιστέρι
+    </div>
+
+
+    <div class="divider"></div>
+
+
+    <!-- =====================
+         BUTTONS
+    ====================== -->
+
+    <div class="buttons">
+
+
+        <!-- GOOGLE REVIEW -->
+
+        <a
+            class="btn"
+            href="https://search.google.com/local/writereview?placeid=ChIJbzWk00OjoRQRWHp7-Xm-Jyc"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+
+            <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+            >
+
+                <path
+                    d="M12 3.5l2.63 5.32 5.87.85-4.25 4.14 1 5.85L12 16.9l-5.25 2.76 1-5.85L3.5 9.67l5.87-.85L12 3.5z"
+                    stroke="white"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                />
+
+            </svg>
+
+            Αφήστε μας μια κριτική
+
+        </a>
+
+
+        <!-- INSTAGRAM -->
+
+        <a
+            class="btn"
+            href="https://www.instagram.com/luxurious_and_creative_lac"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+
+            <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+            >
+
+                <rect
+                    x="3.5"
+                    y="3.5"
+                    width="17"
+                    height="17"
+                    rx="5"
+                    stroke="white"
+                    stroke-width="1.8"
+                />
+
+                <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                    stroke="white"
+                    stroke-width="1.8"
+                />
+
+                <circle
+                    cx="17.4"
+                    cy="6.7"
+                    r="1"
+                    fill="white"
+                />
+
+            </svg>
+
+            Instagram
+
+        </a>
+
+
+        <!-- TREATWELL -->
+
+        <a
+            class="btn"
+            href="https://widget.treatwell.gr/katasthma/luxurious-and-creative-lac-beauty-hall/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+
+            <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+            >
+
+                <rect
+                    x="4"
+                    y="5"
+                    width="16"
+                    height="15"
+                    rx="2"
+                    stroke="white"
+                    stroke-width="1.7"
+                />
+
+                <path
+                    d="M8 3v4M16 3v4M4 9h16"
+                    stroke="white"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                />
+
+                <path
+                    d="M8 13h3M8 16h5"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                />
+
+            </svg>
+
+            Κλείστε το επόμενο σας ραντεβού
+
+        </a>
+
+
+        <!-- TIKTOK -->
+
+        <a
+            class="btn"
+            href="https://www.tiktok.com/@luxurious_and_creative"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+
+            <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+            >
+
+                <path
+                    d="M15 4c.4 2.1 1.7 3.6 4 4v3c-1.5 0-2.9-.4-4-1.1v6.2c0 3-2.4 5.4-5.4 5.4S4.2 19.1 4.2 16.1s2.4-5.4 5.4-5.4c.4 0 .8 0 1.2.1v3.1a2.7 2.7 0 10.9 5.2c1.3 0 2.4-1.1 2.4-2.4V4h.9z"
+                    stroke="white"
+                    stroke-width="1.7"
+                    stroke-linejoin="round"
+                />
+
+            </svg>
+
+            TikTok
+
+        </a>
+
+
+        <!-- LOCATION -->
+
+        <a
+            class="btn"
+            href="https://www.google.com/maps/search/?api=1&query=Luxurious%20and%20Creative%20LAC%2C%20%CE%9A%CF%8E%CF%83%CF%84%CE%B1%20%CE%92%CE%AC%CF%81%CE%BD%CE%B1%CE%BB%CE%B7%2018%2C%20%CE%A0%CE%B5%CF%81%CE%B9%CF%83%CF%84%CE%AD%CF%81%CE%B9&query_place_id=ChIJbzWk00OjoRQRWHp7-Xm-Jyc"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+
+            <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+            >
+
+                <path
+                    d="M12 21s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"
+                    stroke="white"
+                    stroke-width="1.8"
+                />
+
+                <circle
+                    cx="12"
+                    cy="9"
+                    r="2.5"
+                    stroke="white"
+                    stroke-width="1.8"
+                />
+
+            </svg>
+
+            Βρείτε μας στον χάρτη
+
+        </a>
+
+
+        <!-- PHONE -->
+
+        <a
+            class="btn"
+            href="tel:2105734441"
+        >
+
+            <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+            >
+
+                <path
+                    d="M6.5 3.8l3 3.1-2 2.5c1.2 2.5 2.6 3.9 5.1 5.1l2.5-2 3.1 3c.7.7.7 1.8 0 2.4l-1.3 1.3c-.8.8-2 1.1-3.1.7-5.4-1.9-9.8-6.3-11.7-11.7-.4-1.1-.1-2.3.7-3.1l1.3-1.3c.6-.7 1.7-.7 2.4 0z"
+                    stroke="white"
+                    stroke-width="1.7"
+                    stroke-linejoin="round"
+                />
+
+            </svg>
+
+            210 573 4441
+
+        </a>
+
+    </div>
+
+
+    <!-- =====================
+         FOOTER
+    ====================== -->
+
+    <div class="footer-line">
+
+        <div class="footer-symbol">
+            ✦
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        © LUXURIOUS & CREATIVE LAC
+    </div>
+
+</div>
+
+</body>
+</html>
